@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0,0,0,0.7), goldenrod);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 30% 30%;
+    
+}
+
+#header {
+    width:100%;
+    height: 800px;
+    background-image: url('./Assets/Images/Mountain.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+    
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.logo {
+    width: 200px;
+    margin-top: 5px;
+    border-radius: 3%;
+} 
+ 
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    margin-top:0px; 
+    min-height:40px;
+    background-color: goldenrod;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+
+nav ul li a {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+width: 100%;
+}
+
+.title-color {
+    color: goldenrod;
+}
+
+.header-text {
+    margin-top: 10%;
+    font-size: 2rem;
+}
+
+.header-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color:aliceblue;
+}
+
+.header-text p {
+    color:aliceblue
+}
+
+/*********************************About********************************/
+
+#about {
+    padding: 0 0 0 0;
+    color: aliceblue;
+    height: 750px;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    margin-top: 30px;
+
+}
+.about-col-1 img {
+    width: 100%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    color:aliceblue;
+    font-size: 4rem;
+    font-weight: 600; 
+    text-align: ce; 
+}
+
+.sub-title-p{
+    color:aliceblue;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 20px 0 20px 0;
+}
+
+.tab-box {
+    background-color: none;
+    padding: auto;
+    border-radius: 5px;
+}
+.tab-titles {
+    display: flex;
+    color:aliceblue;
+    margin: 20px 0 40px;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aliceblue;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    color: aliceblue;
+}
+
+.tab-contents ul li span {
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+#experience span {
+    color: goldenrod;
+}
+
+#education span {
+    color: goldenrod;
+}
+
+#skills span {
+    color: goldenrod;
+}
+
+.header-buttons {
+    font-size: 1.5rem;
+    color:goldenrod;
+    cursor: pointer;
+}
+/* Style buttons */
+.btn {
+    background-color: rgb(71, 75, 78);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    margin: 50px auto;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: rgb(37, 37, 40);
+  }
+.downloadButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+/************************** My Work ********************************/
+
+#portfolio {
+    padding: 50px 0;
+    
+}
+
+.container > h2 {
+margin-top: 100px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.myWork {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: aliceblue;
+    margin: 20px 0 0 0;
+}
+
+.myWork img {
+    width: 100%;
+    display: block;
+    height: 500px;
+    transition: transform 0.5s;
+    object-fit: cover;
+   
+}
+
+.myWork:hover .layer {
+    height: 100%;
+}
+
+.workHeading {
+    color:aliceblue;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgb(163, 134, 59));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom:20px;
+    font-size: 1.5rem;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;   
+}
+
+.myWork:hover img {
+    transform: scale(1.1);
+}
+
+#portfolio > .container {
+    margin-top: -100px;
+}
+
+/*************************Contact*******************************/
+
+
+#contact {
+    height: 25vh;
+}
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 65%;
+}
+
+.contact-right form {
+width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    background: aliceblue;
+    color: rgb(71, 75, 78);
+}
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+margin-right: 15px;
+font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.btn-btn2 {
+    background-color: rgb(71, 75, 78);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-btn2:hover {
+    background-color: rgb(37, 37, 40);
+  }
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(71, 75, 78);
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+/***********************CSS for small screens********************/
+nav .fa-solid {
+    display: none;
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px 10px;
+    }
+    
+    .header-text {
+        margin-top: 20%;
+        font-size: 16px;
+    }
+    
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+       background: goldenrod;
+       position: fixed;
+       top: 0;
+       right: -200px;
+       width: 200px;
+       height: 100vh;
+       padding-top: 50px; 
+       z-index: 2;
+       transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 40px;
+        text-align: center;
+    }
+    .sub-title-p p {
+        text-align: center;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        margin-top: 0;
+        
+    }
+
+   
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .row {
+    display:block;
+    padding: 0 20px;
+    }
+
+    #about > .row {
+        margin-top: -70px;
+    }
+    
+}
+
+#msg {
+    margin-top: -10px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/***************DRAFT******************/
+    /*#2D4356;
+    height: 100vh;
+    background-color: #435B66;
+    gap: 0.3rem;
+    color:antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 3rem; 
+*/

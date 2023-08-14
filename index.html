@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Matthew O'Brien</Title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/1fa9a41293.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+ </head>
+
+ <body>
+<!----------------Landing Page----------------------->
+      
+
+   <div id="header">
+         
+            <nav>
+                  <img src="./Assets/Images/Logo2.png" class="logo">
+                  <div class="contents">
+                     <ul id="sideMenu" class="contents">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                  </ul>
+                     <i class="fa-solid fa-bars" onclick="openMenu()" style="color: #474b4e;"></i>
+               </div>
+            </nav>
+           
+
+            <div class="header-text">
+               <h1>Matthew is a front-end <br><span class="title-color">Web Developer</span><br> in training.</h1>
+               <p> He likes to <span class="title-color">build</span> from the ground up. </p> 
+            </div>
+         </div>
+      </div>
+       
+<!----------------------About------------------------>
+      <div id = "about">
+         <div class="container">
+            <div class="row">
+                  <div class="about-col-1">
+                     <img class="image-of-me" src="./Assets/Images/me.png" alt ="picture of matthew">
+                     <div class="downloadButton">
+                        <button type="button" onclick="downloadFile()" class="btn" ><i class="fa fa-download" ></i> Download My CV</button>
+                     </div>
+                  </div>  
+                  <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="sub-title-p">
+                     <p>Matthew is a Brit living and working in Vilnius, Lithuania. 
+                        After experimenting with various 
+                        careers he has returned to web development in order to fuel his need for creativity and innovation. 
+                        </p> <br>
+                        <p> Matthew has great time management skills, an eye for detail and is well-versed in the use of Microsoft Office, Oracle Netsuite and teamwork tools such as Microsoft Teams and Jira. 
+                        He is currently completing an online web development course with focus on the front-end (HTML, CSS & Javascript) in addition to back-end skills such as node.js, SQL, & MongoDB.</p>
+                     </div>
+
+                  <div class="tab-box">
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"Experience onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"Education onclick="opentab('education')">Education</p>
+                     </div>
+
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                           <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                           <li><span>Web Development</span><br>Web App Development</li>
+                           <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                     </div>
+
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                           <li><span class="years">2023(Current)</span><br>Designing Web/App Interfaces</li>
+                           <li><span class="years">2020 - 2022</span><br>Web App Development</li>
+                           <li><span class="years">2018 - 2020</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                  </div>
+
+                  <div class="tab-contents" id="education">
+                     <ul>
+                        <li><span>2023</span><br>App Brewery Web Development Online Bootcamp</li>
+                        <li><span>2013 - 2016</span><br>Bachelor of Arts in English Language & Screen Studies at University of Manchester, UK</li>
+                        <li><span>2011 - 2013</span><br>A-Level in Computing at Loreto College</li>
+                     </ul>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <!---------------My Work------------------------>
+
+      <div id="portfolio">
+         <div class="container">
+            <h2 class="workHeading" class="sub-title">My Work</h2>
+           
+            <div class="work-list">
+               <div class="myWork">
+                  <img src="./Assets/Images/work-1.jpeg" alt="picture of a dice">
+                  <div class="layer">
+                     <h3 class="work-examples">Snake Eyes</h3>
+                     <p>A simple dice game created using HTML, CSS & Javascript. Simply click to play.</p>
+                     <a href="https://mattyob95.github.io/SnakeEyesGame/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+               </div>
+               </div>
+
+               <div class="myWork">
+                  <img src="./Assets/Images/work-2.jpeg" alt="picture of a moving van">
+                  <div class="layer">
+                     <h3 class="work-examples">EasyMove</h3>
+                     <p>An interactive website for a moving company created with the bootstrap framework.</p>
+                     <a href="https://mattyob95.github.io/EasyMove/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                  </div>
+               </div>
+               <div class="myWork">
+                  <img src="./Assets/Images/work-3.jpeg" alt="picture of a coffee cup">
+                  <div class="layer">
+                     <h3 class="work-examples">Matt's Coffee</h3>
+                     <p>A website for a coffee shop displaying the drinks menu with the use of HTML & CSS.</p>
+                     <a href="https://mattyob95.github.io/ObrienCafe/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                  </div>
+               </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+         </div>
+      </div>
+   <!--------------------------Contact------------------------------->
+
+   <div id ="contact">
+      <div class="container">
+         <div class="row">
+            <div class="contact-left">
+               <h2 class="sub-title">Contact Me</h2>
+               <p><i class="fa-solid fa-paper-plane" style="color: #474b4e;"></i> mattyob95@gmail.com</p>
+               <p><i class="fa-solid fa-square-phone-flip" style="color: #474b4e;"></i> +370 648 03718</p>
+               <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/matthew-o-brien-4b6a0414b/" target="_blank "><i class="fa-brands fa-linkedin" style="color: #474b4e;"></i></a>
+                  <a href="https://github.com/mattyob95" target="_blank "><i class="fa-brands fa-square-github" style="color: #474b4e;"></i></a>
+               </div>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                  <button class="btn-btn2" type="submit">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+         </div>
+         <div class="copyright">
+            <p>Copyright © Matthew O'Brien 2023</p>
+         </div>
+      </div>
+
+   </div>
+
+
+    <!------------------Script-------------------------->
+   <script src="./index.js" charse="utf-8">
+      function downloadFile() {
+         window.open("./Assets/Web Development CV 1.pdf")
+      }
+      let tabLinks = document.getElementsByClassName("tab-links");
+let tabContents = document.getElementsByClassName("tab-contents");
+</script>
+<script>
+function opentab(tabname) {
+    for (tabLink of tabLinks){
+        tabLink.classList.remove("active-link");
+
+ }for (tabContent of tabContents) {
+        tabContent.classList.remove("active-tab");
+    }
+   
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    
+      }  
+
+
+   </script>
+   <script>
+      let sideMenu = document.getElementById("sideMenu");
+
+      function openMenu() {
+         sideMenu.style.right = "0";
+      }
+
+      function closeMenu() {
+         sideMenu.style.right = "-200px";
+      }
+   </script>
+  
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbz0Los8619OXhTHDEiLeEDhd_o6IeCbzh-bJaErDyf6zBWZkGGoDKPs1PhFXKKz-zIk/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function() {
+               msg.innerHTML = " "
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+   </body>
+   </html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
